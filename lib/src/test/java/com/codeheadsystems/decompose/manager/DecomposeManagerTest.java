@@ -24,4 +24,10 @@ class DecomposeManagerTest {
     assertThat(decomposeManager).isNotNull();
   }
 
+  @Test
+  void testDecompose() {
+    assertThat(decomposeManager.decompose(getFixture("simple_tree.json")))
+        .isNotNull();
+  }
+
 }

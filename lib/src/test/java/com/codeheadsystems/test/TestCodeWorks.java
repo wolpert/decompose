@@ -26,14 +26,26 @@ public class TestCodeWorks {
 
   @Test
   void jsonWorks() throws JsonProcessingException {
-    assertThat(objectMapper.readValue(FixtureHelper.getFixture("simple_tree.json"), ObjectNode.class))
-        .isNotNull();
+    final ObjectNode node = objectMapper.readValue(FixtureHelper.getFixture("simple_tree.json"), ObjectNode.class);
+    validateSimpleTree(node);
   }
 
   @Test
   void yamlWorks() throws JsonProcessingException {
-    assertThat(objectMapper.readValue(FixtureHelper.getFixture("simple_tree.yml"), ObjectNode.class))
+    final ObjectNode node = objectMapper.readValue(FixtureHelper.getFixture("simple_tree.yml"), ObjectNode.class);
+    validateSimpleTree(node);
+  }
+
+  private void validateSimpleTree(final ObjectNode node) {
+    assertThat(node)
         .isNotNull();
+    ObjectNode parent = (ObjectNode) node.get("a");
+    assertThat(parent)
+        .isNotNull()
+        .hasSize(2);
+    assertThat(parent.get("b")).isNotNull();
+    assertThat(parent.get("c")).isNotNull();
+    assertThat(parent.get("d")).isNull();
   }
 
 }
