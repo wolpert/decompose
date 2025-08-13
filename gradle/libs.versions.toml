@@ -2,8 +2,8 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-assertj = "3.27.3"
-immutables = '2.11.2'
+assertj = "3.27.4"
+immutables = '2.11.3'
 inject = '1'
 jackson = '2.19.2'
 junit-jupiter = "5.13.4"
