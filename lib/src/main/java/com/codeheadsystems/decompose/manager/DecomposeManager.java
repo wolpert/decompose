@@ -20,9 +20,9 @@ public class DecomposeManager {
     log.info("DecomposeManager({})", objectMapper);
   }
 
-  public ObjectNode decompose(String json) {
+  public ObjectNode decompose(String string) {
     try {
-      return (ObjectNode) objectMapper.readTree(json);
+      return (ObjectNode) objectMapper.readTree(string);
     } catch (Exception e) {
       throw new RuntimeException(e);
     }
