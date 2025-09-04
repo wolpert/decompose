@@ -1,15 +1,18 @@
-package com.codeheadsystems.test;
+package com.codeheadsystems.decompose.factory;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.codeheadsystems.decompose.factory.ObjectMapperFactory;
+import com.codeheadsystems.test.FixtureHelper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TestCodeWorks {
+/**
+ * Validates that the object mapper works as expected as delivered by the factory.
+ */
+class ObjectMapperFactoryTest {
 
   private ObjectMapper objectMapper;
 
@@ -47,5 +50,4 @@ public class TestCodeWorks {
     assertThat(parent.get("c")).isNotNull();
     assertThat(parent.get("d")).isNull();
   }
-
 }
