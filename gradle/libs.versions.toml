@@ -2,14 +2,14 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-assertj = "3.27.4"
+assertj = "3.27.6"
 immutables = '2.11.3'
 inject = '1'
 jackson = '2.20.0'
 jackson_annotations = '2.20'
 junit-jupiter = "5.13.4"
 logback = '1.5.18'
-mokito = '5.19.0'
+mokito = '5.20.0'
 slf4j = '2.0.17'
 
 [libraries]
