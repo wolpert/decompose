@@ -8,7 +8,7 @@ inject = '1'
 jackson = '2.20.1'
 jackson_annotations = '2.20'
 junit-jupiter = "6.0.1"
-logback = '1.5.20'
+logback = '1.5.21'
 mokito = '5.20.0'
 slf4j = '2.0.17'
 
