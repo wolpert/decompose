@@ -3,11 +3,11 @@
 
 [versions]
 assertj = "3.27.7"
-immutables = '2.12.1'
+immutables = '2.12.2'
 inject = '1'
 jackson = '2.21.3'
 jackson_annotations = '2.21'
-junit-jupiter = "6.0.3"
+junit-jupiter = "6.1.0"
 logback = '1.5.32'
 mokito = '5.23.0'
 slf4j = '2.0.18'
