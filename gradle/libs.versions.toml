@@ -3,7 +3,7 @@
 
 [versions]
 assertj = "3.27.7"
-immutables = '2.12.2'
+immutables = '2.12.3'
 inject = '1'
 jackson = '2.22.3'
 jackson_annotations = '2.22'
